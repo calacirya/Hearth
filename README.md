@@ -1,6 +1,6 @@
 # Hearth
 
-[![Version](https://img.shields.io/badge/version-0.1.0--alpha-lightgrey.svg "0.1.0-alpha")](https://github.com/nereare/Hearth/)
+[![Version](https://img.shields.io/badge/version-0.2.0--alpha-lightgrey.svg "0.2.0-alpha")](https://github.com/nereare/Hearth/)
 [![License](https://img.shields.io/github/license/Nereare/Genesis.svg)](https://github.com/Nereare/Genesis)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/nereare/Hearth/blob/master/code-of-conduct.md)
 
@@ -35,7 +35,7 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 ### Credits
 
  * [MIT License Logo](http://excaliburzero.deviantart.com/art/MIT-License-Logo-595847140) by [ExcaliburZero](http://excaliburzero.deviantart.com/), available under a [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/)
- 
+
 ## License
 
 [![MIT License](http://i.imgur.com/Ze3dFob.png "MIT License")](https://opensource.org/licenses/MIT)
