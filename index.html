@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hearth</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="node_modules/@mdi/font/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="node_modules/typeface-roboto-mono/index.css" />
+    <link rel="stylesheet" href="node_modules/simplemde/dist/simplemde.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="node_modules/simplemde/dist/simplemde.min.js"></script>
+  </head>
+  <body>
+    <textarea id="IDE"></textarea>
+
+    <script>
+      const remote = require('electron').remote
+
+      var simplemde = new SimpleMDE({
+        autoDownloadFontAwesome: false,
+        autofocus: true,
+        element: document.getElementById("IDE"),
+        indentWithTabs: false,
+        spellChecker: false,
+        toolbar: [
+          {
+            name: "new-file",
+            action: null,
+            className: "mdi mdi-file",
+            title: "New File"
+          },
+          {
+            name: "open-file",
+            action: null,
+            className: "mdi mdi-folder",
+            title: "Open File"
+          },
+          {
+            name: "save-file",
+            action: null,
+            className: "mdi mdi-content-save",
+            title: "Save File"
+          },
+          "|",
+          {
+            name: "bold",
+            action: SimpleMDE.toggleBold,
+            className: "mdi mdi-format-bold",
+            title: "Bold"
+          },
+          {
+            name: "italic",
+            action: SimpleMDE.toggleItalic,
+            className: "mdi mdi-format-italic",
+            title: "Italic"
+          },
+          {
+            name: "strikethrough",
+            action: SimpleMDE.toggleStrikethrough,
+            className: "mdi mdi-format-strikethrough",
+            title: "Strikethrough"
+          },
+          {
+            name: "heading",
+            action: SimpleMDE.toggleHeadingSmaller,
+            className: "mdi mdi-format-title",
+            title: "Heading"
+          },
+          "|",
+          {
+            name: "code",
+            action: SimpleMDE.toggleCodeBlock,
+            className: "mdi mdi-code-tags",
+            title: "Code"
+          },
+          {
+            name: "quote",
+            action: SimpleMDE.toggleBlockquote,
+            className: "mdi mdi-format-quote-close",
+            title: "Quote"
+          },
+          {
+            name: "unordered-list",
+            action: SimpleMDE.toggleUnorderedList,
+            className: "mdi mdi-format-list-bulleted-square",
+            title: "Generic List"
+          },
+          {
+            name: "ordered-list",
+            action: SimpleMDE.toggleOrderedList,
+            className: "mdi mdi-format-list-numbered",
+            title: "Numbered List"
+          },
+          "|",
+          {
+            name: "link",
+            action: SimpleMDE.drawLink,
+            className: "mdi mdi-link",
+            title: "Create Link"
+          },
+          {
+            name: "image",
+            action: SimpleMDE.drawImage,
+            className: "mdi mdi-image",
+            title: "Insert Image"
+          },
+          {
+            name: "table",
+            action: SimpleMDE.drawTable,
+            className: "mdi mdi-table",
+            title: "Insert Table"
+          },
+          {
+            name: "horizontal-rule",
+            action: SimpleMDE.drawHorizontalRule,
+            className: "mdi mdi-minus",
+            title: "Insert Horizontal Line"
+          },
+          "|",
+          {
+            name: "exit-app",
+            action: function quitHearth(win) {
+              win = remote.getCurrentWindow()
+              win.close();
+            },
+            className: "mdi mdi-close-circle",
+            title: "Exit App"
+          }
+        ]
+      });
+      simplemde.toggleFullScreen();
+    </script>
+  </body>
+</html>

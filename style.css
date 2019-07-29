@@ -1,0 +1,41 @@
+html { background: #212121; }
+
+.editor-toolbar {
+  background: #000000 !important;
+  border-radius: 0 !important;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+.editor-toolbar::after, .editor-toolbar::before { display: none; }
+.editor-toolbar a {
+  width: 32px;
+  height: 32px;
+}
+.editor-toolbar a, .editor-toolbar a:link, .editor-toolbar a:visited {
+  color: #9e9e9e !important;
+}
+.editor-toolbar a:hover, .editor-toolbar a.active {
+  color: #fafafa !important;
+  background: #000000;
+  border: 1px solid #000000;
+}
+.editor-toolbar .separator {
+  border-left: 1px solid #212121 !important;
+  border-right: 1px solid #212121 !important;
+}
+
+.CodeMirror {
+  background: transparent;
+
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  color: #fafafa;
+  text-align: justify;
+
+  border: none;
+  border-radius: 0 !important;
+
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

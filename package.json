@@ -1,0 +1,29 @@
+{
+  "name": "hearth",
+  "version": "0.2.0-alpha",
+  "description": "A simple writer tool using Github's markdown, made with Electron and ♥.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nereare/Hearth.git"
+  },
+  "author": "Igor Padoim <igorpadoim@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nereare/Hearth/issues"
+  },
+  "homepage": "https://github.com/Nereare/Hearth#readme",
+  "devDependencies": {
+    "electron": "^5.0.8"
+  },
+  "dependencies": {
+    "@mdi/font": "^3.8.95",
+    "normalize.css": "^8.0.1",
+    "simplemde": "^1.11.2",
+    "typeface-roboto-mono": "0.0.75"
+  }
+}
