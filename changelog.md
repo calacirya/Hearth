@@ -30,4 +30,9 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
  * Code of Conduct from [Contributor Covenant v1.4.1](https://www.contributor-covenant.org/)
  * License, git metafiles and ReadMe file.
  * Changelog file.
- * SCSS stylesheet.
+ * CSS stylesheet.
+ * Packages:
+   - [Normalize.css](https://necolas.github.io/normalize.css/);
+   - [Material Design Icons](https://materialdesignicons.com/);
+   - [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono);
+   - [SimpleMDE](https://simplemde.com/).
