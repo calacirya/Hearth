@@ -26,7 +26,7 @@ See the [Change Log](https://github.com/nereare/Hearth/blob/master/changelog.md)
 
 ### Versioning
 
-This projects uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/nereare/Hearth/tags).
+This project uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/nereare/Hearth/tags).
 
 ## Code of Conduct
 
