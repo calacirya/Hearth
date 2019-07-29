@@ -38,4 +38,4 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 
 ## License
 
-[![MIT License](http://i.imgur.com/Ze3dFob.png "MIT License")](https://opensource.org/licenses/MIT)
+[![MIT License](http://i.imgur.com/Ze3dFob.png "MIT License")](https://opensource.org/licenses/MIT) [![Join the chat at https://gitter.im/Nereare-Hearth/community](https://badges.gitter.im/Nereare-Hearth/community.svg)](https://gitter.im/Nereare-Hearth/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
