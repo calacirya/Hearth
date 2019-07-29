@@ -3,8 +3,10 @@
 [![Version](https://img.shields.io/badge/version-0.2.0--alpha-lightgrey.svg "0.2.0-alpha")](https://github.com/nereare/Hearth/)
 [![License](https://img.shields.io/github/license/Nereare/Genesis.svg)](https://github.com/Nereare/Genesis)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/nereare/Hearth/blob/master/code-of-conduct.md)
+[![Join the chat at https://gitter.im/Nereare-Hearth/community](https://badges.gitter.im/Nereare-Hearth/community.svg)](https://gitter.im/Nereare-Hearth/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Nereare/Hearth)](https://libraries.io/github/Nereare/Hearth)
 
-A simple writer tool using Github's markdown, made with [Electron](https://electronjs.org/) and :heart:.
+A simple writer with dynamic highlighting for Github-flavored markdown, made with [Electron](https://electronjs.org/) and :heart:.
 
 ## Contributing
 
@@ -38,4 +40,4 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 
 ## License
 
-[![MIT License](http://i.imgur.com/Ze3dFob.png "MIT License")](https://opensource.org/licenses/MIT) [![Join the chat at https://gitter.im/Nereare-Hearth/community](https://badges.gitter.im/Nereare-Hearth/community.svg)](https://gitter.im/Nereare-Hearth/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![MIT License](http://i.imgur.com/Ze3dFob.png "MIT License")](https://opensource.org/licenses/MIT)

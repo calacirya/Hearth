@@ -1,7 +1,7 @@
 {
   "name": "hearth",
   "version": "0.2.0-alpha",
-  "description": "A simple writer tool using Github's markdown, made with Electron and ♥.",
+  "description": "A simple writer with dynamic highlighting for Github-flavored markdown, made with Electron and ♥.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
