@@ -37,7 +37,8 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
    - [Normalize.css](https://necolas.github.io/normalize.css/);
    - [Material Design Icons](https://materialdesignicons.com/);
    - [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono);
-   - [SimpleMDE](https://simplemde.com/) - :wrench: Dev-only;
+   - [SimpleMDE](https://simplemde.com/);
+   - [Electron](https://electronjs.org/) - :wrench: Dev-only;
    - [Electron Packager](https://github.com/electron/electron-packager) - :wrench: Dev-only.
  * Basic functionality.
 
