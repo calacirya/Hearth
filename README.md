@@ -1,11 +1,15 @@
 # Hearth
 
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/Nereare/Hearth?color=gold)](https://github.com/nereare/Hearth/)
-[![GitHub release](https://img.shields.io/github/release/Nereare/Hearth)](https://github.com/Nereare/Hearth/releases)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/Nereare/Hearth)](https://github.com/nereare/Hearth/)
+[![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/Nereare/Hearth)](https://github.com/Nereare/Hearth/releases)
 [![License](https://img.shields.io/github/license/Nereare/Genesis.svg)](https://github.com/Nereare/Genesis)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/nereare/Hearth/blob/master/code-of-conduct.md)
 [![Join the chat at https://gitter.im/Nereare-Hearth/community](https://badges.gitter.im/Nereare-Hearth/community.svg)](https://gitter.im/Nereare-Hearth/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Nereare/Hearth)](https://libraries.io/github/Nereare/Hearth)
+
+[![GitHub package.json dependency version](https://img.shields.io/github/package-json/dependency-version/Nereare/Hearth/simplemde)](https://simplemde.com/)
+[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/Nereare/Hearth/dev/electron)](https://electronjs.org/)
+[![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/Nereare/Hearth/dev/electron-packager)](https://github.com/electron/electron-packager)
 
 A simple writer with dynamic highlighting for Github-flavored markdown, made with [:electron:](https://electronjs.org/) and :heart:.
 
