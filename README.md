@@ -21,6 +21,8 @@ A simple writer with dynamic highlighting for Github-flavored markdown, made wit
 
 Find the latest binnaries at the [Releases page](https://github.com/Nereare/Hearth/releases).
 
+[![Get Hearth](https://img.shields.io/badge/Get%20Hearth-Releases-green)](https://github.com/Nereare/Hearth/releases)
+
 You can also get the latest version by:
 
 1. Cloning the repository: `git clone https://github.com/Nereare/Hearth.git`;
