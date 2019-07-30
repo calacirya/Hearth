@@ -39,3 +39,4 @@ html { background: #212121; }
   margin-left: auto;
   margin-right: auto;
 }
+.CodeMirror-vscrollbar { display: none !important; }
