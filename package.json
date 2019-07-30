@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Nereare/Hearth#readme",
   "devDependencies": {
-    "electron": "^5.0.8"
+    "electron": "^6.0.0"
   },
   "dependencies": {
     "@mdi/font": "^3.8.95",
