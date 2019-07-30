@@ -26,6 +26,8 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
 
 ## [Unreleased]
 
+## [0.6.0-beta] - 2019-07-30
+
 ### Added
  * Code of Conduct from [Contributor Covenant v1.4.1](https://www.contributor-covenant.org/)
  * License, git metafiles and ReadMe file.
@@ -35,5 +37,9 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
    - [Normalize.css](https://necolas.github.io/normalize.css/);
    - [Material Design Icons](https://materialdesignicons.com/);
    - [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono);
-   - [SimpleMDE](https://simplemde.com/).
+   - [SimpleMDE](https://simplemde.com/) - :wrench: Dev-only;
+   - [Electron Packager](https://github.com/electron/electron-packager) - :wrench: Dev-only.
  * Basic functionality.
+
+[Unreleased]: https://github.com/Nereare/Hearth/compare/v0.6.0-beta...HEAD
+[0.6.0-beta]: https://github.com/Nereare/Hearth/releases/tag/v0.6.0-beta
