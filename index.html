@@ -14,7 +14,11 @@
     <textarea id="IDE"></textarea>
 
     <script>
-      const remote = require('electron').remote
+      const remote = require('electron').remote;
+      const fs = require('fs');
+      const dialog = remote.dialog;
+
+      var fileLoc = "";
 
       var simplemde = new SimpleMDE({
         autoDownloadFontAwesome: false,
@@ -25,21 +29,90 @@
         toolbar: [
           {
             name: "new-file",
-            action: null,
+            action: function newFile() {
+              if(simplemde.value()) {
+                dialog.showMessageBox(
+                  null,
+                  {
+                    type: "question",
+                    buttons: ["Yes", "No"],
+                    title: "Erase work?",
+                    message: "You have open work, if you procceed, any unsaved work will be lost. Do you want to continue?"
+                  },
+                  function reply(response){
+                    if(!response) { simplemde.value(""); }
+                  }
+                );
+              }
+            },
             className: "mdi mdi-file",
             title: "New File"
           },
           {
             name: "open-file",
-            action: null,
+            action: function openFile() {
+              dialog.showOpenDialog(
+                null,
+                {
+                  properties: ['openFile'],
+                  filters: [
+                    {name: "Markdown Files", extensions: ["md", "markdown"]},
+                    {name: "All Files", extensions: ["*"]}
+                  ]
+                }
+              ).then(result => {
+                if(result.filePaths.length == 1) {
+                  fs.readFile(result.filePaths[0], 'utf-8', (err, data) => {
+                    simplemde.value(data);
+                  });
+                }
+              }).catch(err => {
+                dialog.showMessageBox(
+                  null,
+                  {
+                    type: "error",
+                    title: "Open File Error",
+                    message: err
+                  }
+                );
+              });
+            },
             className: "mdi mdi-folder",
             title: "Open File"
           },
           {
             name: "save-file",
-            action: null,
+            action: function saveFile() {
+              if(fileLoc === "") {
+                dialog.showSaveDialog(
+                  null
+                ).then(result => {
+                  if(typeof result.filePath !== "undefined") {
+                    h = fs.writeFile(result.filePath, simplemde.value(), 'utf8', err => {});
+                    fileLoc = result.filePath;
+                  }
+                });
+              } else {
+                h = fs.writeFile(fileLoc, simplemde.value(), 'utf8', err => {});
+              }
+            },
             className: "mdi mdi-content-save",
             title: "Save File"
+          },
+          {
+            name: "save-file-as",
+            action: function saveFileAs() {
+              dialog.showSaveDialog(
+                null
+              ).then(result => {
+                if(typeof result.filePath !== "undefined") {
+                  h = fs.writeFile(result.filePath, simplemde.value(), 'utf8', err => {});
+                  fileLoc = result.filePath;
+                }
+              });
+            },
+            className: "mdi mdi-content-save-all",
+            title: "Save File As"
           },
           "|",
           {

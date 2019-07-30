@@ -36,3 +36,4 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
    - [Material Design Icons](https://materialdesignicons.com/);
    - [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono);
    - [SimpleMDE](https://simplemde.com/).
+ * Basic functionality.
