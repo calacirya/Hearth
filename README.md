@@ -1,6 +1,7 @@
 # Hearth
 
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/Nereare/Hearth?color=lightgray)](https://github.com/nereare/Hearth/)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/Nereare/Hearth?color=gold)](https://github.com/nereare/Hearth/)
+[![GitHub release](https://img.shields.io/github/release/Nereare/Hearth)](https://github.com/Nereare/Hearth/releases)
 [![License](https://img.shields.io/github/license/Nereare/Genesis.svg)](https://github.com/Nereare/Genesis)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/nereare/Hearth/blob/master/code-of-conduct.md)
 [![Join the chat at https://gitter.im/Nereare-Hearth/community](https://badges.gitter.im/Nereare-Hearth/community.svg)](https://gitter.im/Nereare-Hearth/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -18,7 +19,15 @@ A simple writer with dynamic highlighting for Github-flavored markdown, made wit
 
 ## Installing
 
-1. To do, sorry. :cry:
+Find the latest binnaries at the [Releases page](https://github.com/Nereare/Hearth/releases).
+
+You can also get the latest version by:
+
+1. Cloning the repository: `git clone https://github.com/Nereare/Hearth.git`;
+2. Have [Node.js](https://nodejs.org/) installed;
+3. Go to the folder: `cd cloned/to/folder`;
+4. Get the dependencies: `npm install`;
+5. Run: `npm start`.
 
 ## History
 

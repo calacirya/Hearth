@@ -10,6 +10,7 @@
 *.msi
 *.msm
 *.msp
+dist/*
 
 # Packages #
 ############
