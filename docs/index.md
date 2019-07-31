@@ -5,6 +5,10 @@ layout: default
 
 A simple writer with dynamic highlighting for Github-flavored markdown, made with [Electron](https://electronjs.org/) and :heart:.
 
+Version `0.6.0-beta` is out! :tada:
+
+[Check it out!](https://github.com/Nereare/Hearth/releases/tag/v0.6.0-beta)
+
 ## Installing
 
 Find the latest binnaries at the [Releases page](https://github.com/Nereare/Hearth/releases).
@@ -19,16 +23,10 @@ You can also get the latest version by:
 4. Get the dependencies: `npm install`;
 5. Run: `npm start`.
 
-## Code of Conduct
+## [Code of Conduct](/coc)
 
 Please note that this project is released with a [Contributor Code of Conduct](https://github.com/nereare/Hearth/blob/master/code-of-conduct.md). By participating in this project you agree to abide by its terms.
 
-## Credits and Thanks
+## [License](/license)
 
-### Credits
-
- * [MIT License Logo](http://excaliburzero.deviantart.com/art/MIT-License-Logo-595847140) by [ExcaliburZero](http://excaliburzero.deviantart.com/), available under a [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/)
-
-## License
-
-[![MIT License](http://i.imgur.com/Ze3dFob.png "MIT License")](https://opensource.org/licenses/MIT)
+[![MIT License, MIT License Logo by ExcaliburZero](http://i.imgur.com/Ze3dFob.png "MIT License")](https://opensource.org/licenses/MIT)
