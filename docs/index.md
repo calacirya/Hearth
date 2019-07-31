@@ -5,9 +5,9 @@ layout: default
 
 A simple writer with dynamic highlighting for Github-flavored markdown, made with [Electron](https://electronjs.org/) and :heart:.
 
-Version `0.6.0-beta` is out! :tada:
+Version `0.6.0-beta` is out: [check it out!](https://github.com/Nereare/Hearth/releases/tag/v0.6.0-beta) :tada:
 
-[Check it out!](https://github.com/Nereare/Hearth/releases/tag/v0.6.0-beta)
+[Test]({{:path}})
 
 ## Installing
 
