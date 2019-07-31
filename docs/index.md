@@ -23,10 +23,10 @@ You can also get the latest version by:
 4. Get the dependencies: `npm install`;
 5. Run: `npm start`.
 
-## [Code of Conduct](code-of-conduct.md)
+## [Code of Conduct]({{ site.baseurl }}/coc)
 
 Please note that this project is released with a [Contributor Code of Conduct](https://github.com/nereare/Hearth/blob/master/code-of-conduct.md). By participating in this project you agree to abide by its terms.
 
-## [License](license.md)
+## [License]({{ site.baseurl }}/license)
 
 [![MIT License, MIT License Logo by ExcaliburZero](http://i.imgur.com/Ze3dFob.png "MIT License")](https://opensource.org/licenses/MIT)
