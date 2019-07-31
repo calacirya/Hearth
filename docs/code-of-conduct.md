@@ -1,8 +1,10 @@
 ---
-title: Contributor Covenant Code of Conduct
+title: Code of Conduct
 layout: default
 permalink: /coc
 ---
+
+# Contributor Covenant Code of Conduct
 
 ## Our Pledge
 
