@@ -7,3 +7,5 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-feed
+
+theme: jekyll-theme-cayman
