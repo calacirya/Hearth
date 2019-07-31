@@ -7,6 +7,8 @@ A simple writer with dynamic highlighting for Github-flavored markdown, made wit
 
 Version `0.6.0-beta` is out: [check it out!](https://github.com/Nereare/Hearth/releases/tag/v0.6.0-beta) :tada:
 
+![Hearth image banner](./Hearth.jpg)
+
 ## Installing
 
 Find the latest binnaries at the [Releases page](https://github.com/Nereare/Hearth/releases).
