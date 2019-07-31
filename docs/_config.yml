@@ -1,6 +1,11 @@
 title: Nereare's Hearth
 description: Write more with less distractions
-show_downloads: true
+
+menus:
+  - link: "/coc"
+    text: "Code of Conduct"
+  - link: "/license"
+    text: "License"
 
 plugins:
   - jekyll-mentions
