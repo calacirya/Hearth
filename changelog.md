@@ -27,6 +27,7 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
 ## [Unreleased]
 
 ### Added
+ * Cryptography saving and loading.
  * Packages:
    - [Crypto-JS](https://www.npmjs.com/package/crypto-js);
    - [Smalltalk](https://www.npmjs.com/package/smalltalk).
@@ -34,7 +35,7 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
 ## [0.6.0-beta] - 2019-07-30
 
 ### Added
- * Code of Conduct from [Contributor Covenant v1.4.1](https://www.contributor-covenant.org/)
+ * Code of Conduct from [Contributor Covenant v1.4.1](https://www.contributor-covenant.org/).
  * License, git metafiles and ReadMe file.
  * Changelog file.
  * CSS stylesheet.
