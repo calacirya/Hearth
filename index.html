@@ -40,7 +40,10 @@
                     message: "You have open work, if you procceed, any unsaved work will be lost. Do you want to continue?"
                   },
                   function reply(response){
-                    if(!response) { simplemde.value(""); }
+                    if(!response) {
+                      simplemde.value("");
+                      fileLoc = "";
+                    }
                   }
                 );
               }
