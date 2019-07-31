@@ -34,6 +34,7 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
 
 ### Fixed
  * Lack of file extensions when saving.
+ * Saving previously encrypted file as unencrypted without warning - now we warn you first.
 
 ## [0.6.0-beta] - 2019-07-30
 
