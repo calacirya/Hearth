@@ -12,6 +12,8 @@
 *.msp
 dist/*
 **/_site/*
+**/.sass-cache/*
+Gemfile*
 
 # Packages #
 ############
