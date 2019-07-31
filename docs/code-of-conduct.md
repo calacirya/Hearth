@@ -1,6 +1,7 @@
 ---
 title: Contributor Covenant Code of Conduct
 layout: default
+permalink: /coc
 ---
 
 ## Our Pledge
