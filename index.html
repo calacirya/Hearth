@@ -92,18 +92,33 @@
           {
             name: "save-file",
             action: function saveFile() {
-              if(fileLoc === "") {
-                dialog.showSaveDialog(
-                  null
-                ).then(result => {
-                  if(typeof result.filePath !== "undefined") {
-                    h = fs.writeFile(result.filePath, simplemde.value(), 'utf8', err => {});
-                    fileLoc = result.filePath;
+              dialog.showMessageBox(
+                null,
+                {
+                  type: "question",
+                  buttons: ["Yes", "No"],
+                  title: "Confirm Unencrypted Save",
+                  message: "We detected a passphrase, which signifies a possibly encrypted file. If you continue, your work will be saved without encryption, contiue?"
+                },
+                response => {
+                  if(!response) {
+                    if(fileLoc === "") {
+                      dialog.showSaveDialog(
+                        null
+                      ).then(result => {
+                        if(typeof result.filePath !== "undefined") {
+                          h = fs.writeFile(result.filePath, simplemde.value(), 'utf8', err => {});
+                          fileLoc = result.filePath;
+                          filePass = "";
+                        }
+                      });
+                    } else {
+                      h = fs.writeFile(fileLoc, simplemde.value(), 'utf8', err => {});
+                      filePass = "";
+                    }
                   }
-                });
-              } else {
-                h = fs.writeFile(fileLoc, simplemde.value(), 'utf8', err => {});
-              }
+                }
+              );
             },
             className: "mdi mdi-content-save",
             title: "Save File"
@@ -122,6 +137,7 @@
                     err => {}
                   );
                   fileLoc = result.filePath;
+                  filePass = "";
                 }
               });
             },
