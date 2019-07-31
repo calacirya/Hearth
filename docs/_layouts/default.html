@@ -27,7 +27,7 @@
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
       {% for menu in site.menus %}
-        <a href="{{ menu.link }}" class="btn">{{ menu.text }}</a>
+        <a href="{{ site.baseurl }}/{{ menu.link }}" class="btn">{{ menu.text }}</a>
       {% endfor %}
     </header>
 
