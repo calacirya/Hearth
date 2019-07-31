@@ -1,3 +1,7 @@
+title: Nereare's Hearth
+description: Write more with less distractions
+show_downloads: true
+
 plugins:
   - jekyll-mentions
   - jemoji

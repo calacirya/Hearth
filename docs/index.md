@@ -3,17 +3,7 @@ title: Hearth
 layout: default
 ---
 
-# {{ page.title }}
-
-A simple writer with dynamic highlighting for Github-flavored markdown, made with [:electron:](https://electronjs.org/) and :heart:.
-
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :tada:
+A simple writer with dynamic highlighting for Github-flavored markdown, made with [Electron](https://electronjs.org/) and :heart:.
 
 ## Installing
 
@@ -28,14 +18,6 @@ You can also get the latest version by:
 3. Go to the folder: `cd cloned/to/folder`;
 4. Get the dependencies: `npm install`;
 5. Run: `npm start`.
-
-## History
-
-See the [Change Log](https://github.com/nereare/Hearth/blob/master/changelog.md) for further history.
-
-### Versioning
-
-This project uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/nereare/Hearth/tags).
 
 ## Code of Conduct
 
