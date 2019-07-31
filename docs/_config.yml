@@ -6,6 +6,8 @@ menus:
     text: "Code of Conduct"
   - link: "/license"
     text: "License"
+  - link: "/screens"
+    text: "Screenshots"
 
 plugins:
   - jekyll-mentions
