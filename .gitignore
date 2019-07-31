@@ -11,6 +11,7 @@
 *.msm
 *.msp
 dist/*
+**/_site/*
 
 # Packages #
 ############
