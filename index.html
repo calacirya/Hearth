@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="node_modules/simplemde/dist/simplemde.min.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="node_modules/simplemde/dist/simplemde.min.js"></script>
+    <script src="node_modules/crypto-js/crypto-js.js"></script>
+    <script src="node_modules/smalltalk/dist/smalltalk.min.js"></script>
   </head>
   <body>
     <textarea id="IDE"></textarea>
@@ -18,7 +20,8 @@
       const fs = require('fs');
       const dialog = remote.dialog;
 
-      var fileLoc = "";
+      var fileLoc  = "";
+      var filePass = "";
 
       var simplemde = new SimpleMDE({
         autoDownloadFontAwesome: false,
@@ -42,7 +45,8 @@
                   function reply(response){
                     if(!response) {
                       simplemde.value("");
-                      fileLoc = "";
+                      fileLoc  = "";
+                      filePass = "";
                     }
                   }
                 );
@@ -68,6 +72,8 @@
                   fs.readFile(result.filePaths[0], 'utf-8', (err, data) => {
                     simplemde.value(data);
                   });
+                  fileLoc = result.filePaths[0];
+                  filePass = "";
                 }
               }).catch(err => {
                 dialog.showMessageBox(
@@ -86,18 +92,33 @@
           {
             name: "save-file",
             action: function saveFile() {
-              if(fileLoc === "") {
-                dialog.showSaveDialog(
-                  null
-                ).then(result => {
-                  if(typeof result.filePath !== "undefined") {
-                    h = fs.writeFile(result.filePath, simplemde.value(), 'utf8', err => {});
-                    fileLoc = result.filePath;
+              dialog.showMessageBox(
+                null,
+                {
+                  type: "question",
+                  buttons: ["Yes", "No"],
+                  title: "Confirm Unencrypted Save",
+                  message: "We detected a passphrase, which signifies a possibly encrypted file. If you continue, your work will be saved without encryption, contiue?"
+                },
+                response => {
+                  if(!response) {
+                    if(fileLoc === "") {
+                      dialog.showSaveDialog(
+                        null
+                      ).then(result => {
+                        if(typeof result.filePath !== "undefined") {
+                          h = fs.writeFile(result.filePath, simplemde.value(), 'utf8', err => {});
+                          fileLoc = result.filePath;
+                          filePass = "";
+                        }
+                      });
+                    } else {
+                      h = fs.writeFile(fileLoc, simplemde.value(), 'utf8', err => {});
+                      filePass = "";
+                    }
                   }
-                });
-              } else {
-                h = fs.writeFile(fileLoc, simplemde.value(), 'utf8', err => {});
-              }
+                }
+              );
             },
             className: "mdi mdi-content-save",
             title: "Save File"
@@ -109,13 +130,98 @@
                 null
               ).then(result => {
                 if(typeof result.filePath !== "undefined") {
-                  h = fs.writeFile(result.filePath, simplemde.value(), 'utf8', err => {});
+                  h = fs.writeFile(
+                    result.filePath + ".md",
+                    simplemde.value(),
+                    'utf8',
+                    err => {}
+                  );
                   fileLoc = result.filePath;
+                  filePass = "";
                 }
               });
             },
             className: "mdi mdi-content-save-all",
             title: "Save File As"
+          },
+          "|",
+          {
+            name: "open-crypto",
+            action: function openCrypto() {
+              dialog.showOpenDialog(
+                null,
+                {
+                  properties: ['openFile'],
+                  filters: [
+                    {name: "Crypto Markdown Files", extensions: ["cryp.md", "cryp.markdown"]},
+                    {name: "All Files", extensions: ["*"]}
+                  ]
+                }
+              ).then(result => {
+                if(result.filePaths.length == 1) {
+                  fs.readFile(result.filePaths[0], 'utf-8', (err, data) => {
+                    smalltalk.prompt(
+                      'Open Crypto File',
+                      'Enter passphrase',
+                      '',
+                      {type: "password"}
+                    ).then((value) => {
+                      filePass = value;
+                      simplemde.value(CryptoJS.AES.decrypt(data, filePass).toString(CryptoJS.enc.Utf8));
+                      fileLoc = result.filePaths[0];
+                    });
+                  });
+                }
+              }).catch(err => {
+                dialog.showMessageBox(
+                  null,
+                  {
+                    type: "error",
+                    title: "Open File Error",
+                    message: err
+                  }
+                );
+              });
+            },
+            className: "mdi mdi-lock-open",
+            title: "Open Crypto File"
+          },
+          {
+            name: "save-crypto",
+            action: function saveCrypto() {
+              if(fileLoc !== "" && filePass !== "") {
+                h = fs.writeFile(
+                  fileLoc,
+                  CryptoJS.AES.encrypt(simplemde.value(), filePass).toString(),
+                  'utf8',
+                  err => {}
+                );
+              } else {
+                dialog.showSaveDialog(
+                  null
+                ).then(result => {
+                  if(typeof result.filePath !== "undefined") {
+                    smalltalk.prompt(
+                      'Save Crypto File',
+                      'Enter passphrase',
+                      '',
+                      {type: "password"}
+                    ).then((value) => {
+                      filePass = value;
+                      h = fs.writeFile(
+                        result.filePath + ".cryp.md",
+                        CryptoJS.AES.encrypt(simplemde.value(), filePass).toString(),
+                        'utf8',
+                        err => {}
+                      );
+                      fileLoc = result.filePath;
+                    });
+                  }
+                });
+              }
+            },
+            className: "mdi mdi-lock",
+            title: "Save Crypto File"
           },
           "|",
           {

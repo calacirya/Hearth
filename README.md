@@ -8,6 +8,7 @@
 [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Nereare/Hearth)](https://libraries.io/github/Nereare/Hearth)
 
 [![GitHub package.json dependency version](https://img.shields.io/github/package-json/dependency-version/Nereare/Hearth/simplemde)](https://simplemde.com/)
+[![GitHub package.json dependency version](https://img.shields.io/github/package-json/dependency-version/Nereare/Hearth/crypto-js)](https://www.npmjs.com/package/crypto-js)
 [![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/Nereare/Hearth/dev/electron)](https://electronjs.org/)
 [![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/Nereare/Hearth/dev/electron-packager)](https://github.com/electron/electron-packager)
 
