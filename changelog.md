@@ -26,6 +26,11 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
 
 ## [Unreleased]
 
+### Added
+ * Packages:
+   - [Crypto-JS](https://www.npmjs.com/package/crypto-js);
+   - [Smalltalk](https://www.npmjs.com/package/smalltalk).
+
 ## [0.6.0-beta] - 2019-07-30
 
 ### Added

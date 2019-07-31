@@ -40,3 +40,40 @@ html { background: #212121; }
   margin-right: auto;
 }
 .CodeMirror-vscrollbar { display: none !important; }
+
+.smalltalk .page {
+  border: solid 1px #000000 !important;
+  background-color: #212121 !important;
+
+  font-family: 'Roboto Mono', monospace;
+  color: #fafafa !important;
+}
+.smalltalk .page button {
+  font-family: 'Roboto Mono', monospace !important;
+  color: #fafafa !important;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.smalltalk .page button:hover,
+.smalltalk .page button:active {
+  background: #fafafa;
+  color: #212121 !important;
+}
+.smalltalk .page header {
+  font-family: 'Roboto Mono', monospace;
+  color: #ffffff !important;
+}
+.smalltalk input {
+  border-radius: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid #484848 !important;
+  background: transparent !important;
+
+  font-family: 'Roboto Mono', monospace !important;
+  color: #fafafa !important;
+}
+.smalltalk input:hover,
+.smalltalk input:active {
+  border-bottom-color: #fafafa !important;
+}
