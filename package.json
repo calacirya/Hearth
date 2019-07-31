@@ -1,6 +1,6 @@
 {
   "name": "hearth",
-  "version": "0.8.2-beta",
+  "version": "0.8.4-beta",
   "description": "A simple writer with dynamic highlighting for Github-flavored markdown, made with Electron and ♥.",
   "main": "main.js",
   "scripts": {
