@@ -32,6 +32,9 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
    - [Crypto-JS](https://www.npmjs.com/package/crypto-js);
    - [Smalltalk](https://www.npmjs.com/package/smalltalk).
 
+### Fixed
+ * Lack of file extensions when saving.
+
 ## [0.6.0-beta] - 2019-07-30
 
 ### Added
